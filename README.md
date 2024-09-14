@@ -112,9 +112,17 @@ Reference: https://packaging.python.org/guides/installing-using-pip-and-virtual-
 Logbert and other baseline models are implemented on [HDFS](https://github.com/logpai/loghub/tree/master/HDFS), [BGL](https://github.com/logpai/loghub/tree/master/BGL), and [thunderbird]() datasets
 
 ### HDFS example
-```shell script
-source env/bin/activate
 
+#### Install logs dataset for example HDFS
+```shell script
+cd ~/
+git clone https://github.com/K-PANIK/loghubSystemLogs.git ~/.dataset
+ln -s HDFS_2k.log .dataset/HDFS/HDFS.log
+```
+
+```shell script
+cd logbert
+source env/bin/activate
 cd HDFS
 
 sh init.sh
