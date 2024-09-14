@@ -118,7 +118,13 @@ Logbert and other baseline models are implemented on [HDFS](https://github.com/l
 cd ~/
 git clone https://github.com/K-PANIK/loghubSystemLogs.git ~/.dataset
 ln -s HDFS_2k.log .dataset/HDFS/HDFS.log
+
+cd ~/
+git clone https://github.com/K-PANIK/loglizerAnomalyHDFS.git
+ln -s ~/loglizerAnomalyHDFS/data/HDFS/anomaly_label.csv .dataset/HDFS/anomaly_label.csv
 ```
+
+#### Execute logbert
 
 ```shell script
 cd logbert
